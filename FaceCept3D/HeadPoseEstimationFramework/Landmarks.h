@@ -18,6 +18,7 @@
 #include <pcl/point_types.h>
 #include <pcl/point_cloud.h>
 #include <pcl/search/kdtree.h>
+#include <pcl/common/transforms.h>
 
 namespace hpe
 {

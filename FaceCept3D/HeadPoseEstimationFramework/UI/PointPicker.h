@@ -73,10 +73,14 @@ namespace hpe
                 viewer.registerKeyboardCallback(&PointPicker::KeyboardCallback, this);
 
                 viewer.addPointCloud(m_cloud, "cloud");
+                viewer.addCoordinateSystem(1);
+                viewer.setBackgroundColor(0,0,0);
 
-                if (m_showColor == false)
+//                if (m_showColor == false)
+                if (true)
                 {
-                    viewer.setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_COLOR, 1, 0, 1, "cloud");
+                    std::cout << "enter the viewer setting" << std::endl;
+                    viewer.setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_COLOR, 255, 0, 0, "cloud");
                 }
 
                 viewer.addText("Press:\n SHIFT + Left Click to select\n DELETE to clear\n BACKSPACE to delete last point\n SPACE to finish", 10, 50, 11, 1, 1, 1, "instructions");

@@ -9,7 +9,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 #include <fstream>
-#include <Windows.h>
+//#include <Windows.h>
 #include <map>
 #include <boost/filesystem.hpp>
 

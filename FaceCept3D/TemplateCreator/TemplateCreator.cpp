@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
                                                                  "then the right eye center, then the tip of the nose.\n"
                                                                  "NOTE: Make sure use see the front part of the face, not the backward facing part");
 
-            pcl::io::savePCDFileBinary(settings.GetString("Template"), *resampledTemplate);
+            pcl::io::savePCDFileASCII(settings.GetString("Template"), *resampledTemplate);
             hpe::SaveLandmarks<pcl::PointXYZRGBA>(l, settings.GetString("Landmarks"));
         }
     }

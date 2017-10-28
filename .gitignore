@@ -13,3 +13,4 @@ Release
 x64
 data/DetectorData
 data/FERData
+cmake-build-debug

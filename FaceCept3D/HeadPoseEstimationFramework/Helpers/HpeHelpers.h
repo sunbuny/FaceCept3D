@@ -20,7 +20,7 @@ namespace hpe
     {
         Eigen::Vector3f result;
 
-        pcl::search::KdTree<PointType>::Ptr search(new pcl::search::KdTree<PointType>);
+        typename pcl::search::KdTree<PointType>::Ptr search(new pcl::search::KdTree<PointType>);
 
         pcl::IndicesPtr idx(new std::vector<int>);
         idx->push_back(noseInCloud);
